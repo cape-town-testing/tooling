@@ -1,7 +1,8 @@
 # nigthwatch
 
 ## Perequisites
-
+Latest Git installed - https://www.atlassian.com/git/tutorials/install-git
+Java Installed - https://java.com/en/download/
 Lastest nodejs installed - https://nodejs.org/en/
 Browser installed (Chrome)
 
@@ -9,7 +10,7 @@ Browser installed (Chrome)
 
 Clone the repository to your project folder
 ```
-$ git clone 
+$ git clone https://github.com/cape-town-testing/tooling.git
 ```
 
 Navigate to project folder and install dependencies
