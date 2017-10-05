@@ -12,7 +12,8 @@
   },
   "devDependencies": {},
   "scripts": {
-    "test": "node ./node_modules/nightwatch/bin/runner --retries 2"
+    "test": "node ./node_modules/nightwatch/bin/runner --retries 2",
+    "test:debug": "npm run test -- --verbose"
   },
   "repository": {
     "type": "git",
