@@ -9,14 +9,14 @@ Browser installed (Chrome)
 ```
 
 ## Setup
-Open a command prompt window `start > run  > cmd`
+Open a command prompt window `start > run  > cmd` <br />
 `$` means run in the command prompt window
 
 Clone the repository to your project folder 
 ```
 $ git clone https://github.com/cape-town-testing/tooling.git
 ```
-Navigate to project folder `$ cd nightwatchjs` 
+Navigate to project folder `$ cd tooling/nightwatchjs` <br />
 Install dependencies
 ```
 $ npm install
