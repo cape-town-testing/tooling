@@ -16,14 +16,14 @@
 @title[Step 2. Tick the boxes]
 ## Checklist
 
-####### <span style="color: gray">Selenium-webriver in a grid</span>
-####### <span style="color: gray">Managable config</span>
-####### <span style="color: gray">Readable / Maintainable tests</span>
-####### <span style="#e49436: gray">POMs</span>
-####### <span style="color: gray">Parallel test execution</span>
-####### <span style="color: gray">Screenshots on failures</span>
-####### <span style="color: gray">Room for customisation</span>
-####### <span style="color: #e49436">Free</span>
+#######span style="color: gray">Selenium-webriver in a grid</span>
+#######span style="color: gray">Managable config</span>
+#######span style="color: gray">Readable / Maintainable tests</span>
+#######span style="color: #e49436">POMs</span>
+#######span style="color: gray">Parallel test execution</span>
+#######span style="color: gray">Screenshots on failures</span>
+#######<span style="color: gray">Room for customisation</span>
+#######<span style="color: #e49436">Free</span>
 ---
 @title[Step 3. Demo]
 ## Demo
