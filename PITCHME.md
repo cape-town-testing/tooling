@@ -28,5 +28,5 @@
 @title[Step 3. Demo]
 ## Demo
 
-### <span style="color: #e49436">Do</span> or Do not there is no try
+### Take <span style="color: #e49436">chances</span> , Make <span style="color: #e49436">mistakes</span>
 ---
