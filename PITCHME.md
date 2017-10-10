@@ -9,21 +9,21 @@
 #### <span style="color: #e49436">Not</span> a tool punt
 #### <span style="color: #e49436">Not</span> a dev
 #### <span style="color: #e49436">Not</span> a silver bullet
-```
-<span style="color:gray; font-size:0.6em;">Many ways to skin a cat</span>
+
+<span style="color:gray; font-size:0.6em;">Many ways to skin a cat</span><br/>
 <span style="color:gray; font-size:0.6em;">Beginner to Expert level</span>
 ---
 @title[Step 2. Tick the boxes]
 ## Checklist
 
-#### Selenium-webriver in a grid
-#### <span style="color: gray">Managable config</span>
-#### Readable / Maintainable tests
-#### <span style="color: gray">POMs</span>
-#### Parallel test execution
-#### <span style="color: gray">Screenshots on failures</span>
-#### Room for customisation
-#### <span style="color: gray">Free</span>
+####### <span style="color: gray">Selenium-webriver in a grid</span>
+####### <span style="color: gray">Managable config</span>
+####### <span style="color: gray">Readable / Maintainable tests</span>
+####### <span style="#e49436: gray">POMs</span>
+####### <span style="color: gray">Parallel test execution</span>
+####### <span style="color: gray">Screenshots on failures</span>
+####### <span style="color: gray">Room for customisation</span>
+####### <span style="color: #e49436">Free</span>
 ---
 @title[Step 3. Demo]
 ## Demo
