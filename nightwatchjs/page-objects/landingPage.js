@@ -5,9 +5,13 @@ const actions = {
     this.expect.element('@logoText').text.contains(text);
     return this.api;
   },
-  clickTheBusinessMenuItem() {
-    this.waitForElementVisible('@businessMenuItem');
-    this.click('@businessMenuItem');
+  clickTheFirstHotTopic() {
+    this.waitForElementVisible('@firstHotTopicLink');
+    this.click('@firstHotTopicLink');
+    return this.api;
+  },
+  mainStoryIsVisible() {
+    this.waitForElementVisible('@mainStoryContainer');
     return this.api;
   },
 };
@@ -15,10 +19,11 @@ const actions = {
 module.exports = {
   elements: {
     logoText: '#news24HeaderLogo a',
-    businessMenuItem: {
-      selector: '//*[@id="tablink2"]/a',
+    firstHotTopicLink: {
+      selector: '//a[contains(text(),"SA politics")]',
       locateStrategy: 'xpath'
     },
+    mainStoryContainer: '#main_story_container',
   },
   commands: [actions],
 };

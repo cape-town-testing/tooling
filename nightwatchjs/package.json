@@ -13,6 +13,7 @@
   "devDependencies": {},
   "scripts": {
     "test": "node ./node_modules/nightwatch/bin/runner --retries 2",
+    "test:mobile": "node ./node_modules/nightwatch/bin/runner --env mobile --tag mobileSite --retries 2",
     "test:debug": "npm run test -- --verbose"
   },
   "repository": {

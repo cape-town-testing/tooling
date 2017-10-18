@@ -1,5 +1,6 @@
 'use strict';
 module.exports = {
+  '@tags': ['mobileSite'],
   disabled: false,
   
   'Open News24 landing page and verify logo text': (browser) => {
@@ -7,7 +8,8 @@ module.exports = {
 
     const landingPage = browser.page.landingPage();
     landingPage.logoHasText('News24 News. Breaking News. First');
-    landingPage.clickTheBusinessMenuItem();
+    landingPage.clickTheFirstHotTopic();
+    landingPage.mainStoryIsVisible();
 
     browser.end();
   },

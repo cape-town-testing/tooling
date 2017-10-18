@@ -8,7 +8,7 @@
 
   "test_settings": {
     "default": {
-      "launch_url" : "http://www.news24.com/",
+      "launch_url" : "http://www.news24.com/SouthAfrica",
       "selenium_port": 4444,
       "selenium_host": "localhost",
       "start_process": true,
@@ -27,6 +27,9 @@
           "args": ["--no-sandbox"]
         }
       }
+    },
+    "mobile": {
+      "launch_url": "http://m.news24.com/News24/SouthAfrica"
     }
   }
 }
