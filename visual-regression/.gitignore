@@ -1,0 +1,10 @@
+## folders
+node_modules
+dist
+coverage
+**/__images__/**/output/
+
+## files
+**/.DS_Store
+*.log
+docker-compose.override.yml
