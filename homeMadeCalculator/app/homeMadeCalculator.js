@@ -1,17 +1,16 @@
 function homeMadeCalculator(valueOne, valueTwo) {
-  let answer = 0; 
-  let x = parseInt(valueOne, 10)
-  let y = parseInt(valueTwo, 10)
+  const x = parseInt(valueOne, 10);
+  const y = parseInt(valueTwo, 10);
 
-  if (x > 0 && y > 0) {
-    answer = x + y;
+  if (isNaN(x) || isNaN(y)) {
+    throw new Error('there was an error with the input');
   }
-  else {
-    answer = 'there was an error with the input';
-  } 
-  return answer;
+
+  if (x < 0 || y < 0) {
+    throw new Error("inputs can't be negative");
+  }
+
+  return x + y;
 }
 
-module.exports = {
-  homeMadeCalculator
-};
+module.exports = homeMadeCalculator;

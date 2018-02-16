@@ -4,7 +4,8 @@
   "description": "demo node and mocha",
   "main": "index.js",
   "scripts": {
-    "test": "./node_modules/.bin/mocha --reporter spec"
+    "start": "node ./app/server.js",
+    "test": "mocha --reporter spec"
   },
   "author": "matthewjacobs",
   "license": "ISC",
