@@ -1,5 +1,5 @@
 expect.extend({
-  isGolden(result) {
+  toMatchBaseline(result) {
     return result;
   }
 });
