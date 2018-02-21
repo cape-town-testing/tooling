@@ -1,6 +1,6 @@
-# nigthwatch
+# nightwatch
 
-## Perequisites
+## Pre-requisites
 ```
 Latest Git installed - https://www.atlassian.com/git/tutorials/install-git
 Java Installed - https://java.com/en/download/
