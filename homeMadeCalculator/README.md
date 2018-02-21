@@ -1,4 +1,4 @@
-# nightwatch
+# homeMadeCalculator (NodeJs + Mocha + Chai + Express + Require)
 
 ## Pre-requisites
 ```
@@ -16,7 +16,7 @@ Clone the repository to your project folder
 ```
 $ git clone https://github.com/cape-town-testing/tooling.git
 ```
-Navigate to project folder `$ cd tooling/nightwatchjs` <br />
+Navigate to project folder `$ cd tooling/homeMadeCalculator` <br />
 Install dependencies
 ```
 $ npm install
