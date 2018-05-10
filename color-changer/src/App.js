@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import classNames from "classnames";
 import { timer } from "./config"
-
 import "./App.css";
 
 class App extends Component {
@@ -12,6 +11,7 @@ class App extends Component {
   };
 
   componentDidMount() {
+    this.timeLimit = window.prompt("How long should the talk be (minutes)?");
     this.run();
   }
 
@@ -21,24 +21,37 @@ class App extends Component {
 
   run() {
     this.getConfirmation();
-    this.changeColor("green");
-    setTimeout(this.changeColor.bind(this, "yellow"), 20000);
-    setTimeout(this.changeColor.bind(this, "orange"), 30000);
-    setTimeout(this.changeColor.bind(this, "orangered"), 40000);
-    setTimeout(this.changeColor.bind(this, "red"), 50000);
-    setTimeout(this.toggleCounter.bind(this), 50000);
-    setTimeout(this.changeCounter.bind(this), 51000);
-    setTimeout(this.changeCounter.bind(this), 52000);
-    setTimeout(this.changeCounter.bind(this), 53000);
-    setTimeout(this.changeCounter.bind(this), 54000);
-    setTimeout(this.changeCounter.bind(this), 55000);
-    setTimeout(this.changeCounter.bind(this), 56000);
-    setTimeout(this.changeCounter.bind(this), 57000);
-    setTimeout(this.changeCounter.bind(this), 58000);
-    setTimeout(this.changeCounter.bind(this), 59000);
-    setTimeout(this.changeCounter.bind(this), 60000);
-    setTimeout(this.resetCounter.bind(this), 61000);
-    setTimeout(this.run.bind(this), 61000);
+      const timeLimitMilliseconds = this.timeLimit * 60000;
+      this.changeColor("green");
+      setTimeout(
+        this.changeColor.bind(this, "yellow"),
+        timeLimitMilliseconds * 0.5
+      );
+      setTimeout(
+        this.changeColor.bind(this, "orange"),
+        timeLimitMilliseconds * 0.65
+      );
+      setTimeout(
+        this.changeColor.bind(this, "orangered"),
+        timeLimitMilliseconds * 0.75
+      );
+      setTimeout(
+        this.changeColor.bind(this, "red"),
+        timeLimitMilliseconds - 10000
+      );
+      setTimeout(this.toggleCounter.bind(this), timeLimitMilliseconds - 10000);
+      setTimeout(this.changeCounter.bind(this), timeLimitMilliseconds - 9000);
+      setTimeout(this.changeCounter.bind(this), timeLimitMilliseconds - 8000);
+      setTimeout(this.changeCounter.bind(this), timeLimitMilliseconds - 7000);
+      setTimeout(this.changeCounter.bind(this), timeLimitMilliseconds - 6000);
+      setTimeout(this.changeCounter.bind(this), timeLimitMilliseconds - 5000);
+      setTimeout(this.changeCounter.bind(this), timeLimitMilliseconds - 4000);
+      setTimeout(this.changeCounter.bind(this), timeLimitMilliseconds - 3000);
+      setTimeout(this.changeCounter.bind(this), timeLimitMilliseconds - 2000);
+      setTimeout(this.changeCounter.bind(this), timeLimitMilliseconds - 1000);
+      setTimeout(this.changeCounter.bind(this), timeLimitMilliseconds);
+      setTimeout(this.resetCounter.bind(this), timeLimitMilliseconds + 1000);
+      setTimeout(this.run.bind(this), timeLimitMilliseconds + 1000);
   }
 
   changeColor(color) {
@@ -71,19 +84,18 @@ class App extends Component {
   render() {
     const appClass = classNames({
       App: true,
+      white: this.state.showCounter && this.state.counter === 0,
       [this.state.color]: true
     });
     console.log(timer);
     return (
       <div className={appClass}>
-        {!this.state.showCounter &&
-        this.state.color === 'green' && <h1>Lets start</h1>}
-        {!this.state.showCounter &&
-          this.state.color === 'orangered' && <h1>Last 10 secnds coming up</h1>}
+      {!this.state.showCounter && <h1>Timer is counting down, wait for the color change</h1>}
+      { this.state.counter > 10 && this.state.counter < 15 && <h1>Last 10 secnds coming up</h1>}
         {this.state.showCounter &&
           this.state.counter > 0 && <h1>{this.state.counter}</h1>}
         {this.state.showCounter &&
-          this.state.counter === 0 && <h1>Questions?</h1>}
+          this.state.counter === 0 && <h1 className="white">Questions?</h1>}
       </div>
     );
   }
