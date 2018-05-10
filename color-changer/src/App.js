@@ -91,7 +91,7 @@ class App extends Component {
     return (
       <div className={appClass}>
       {!this.state.showCounter && <h1>Timer is counting down, wait for the color change</h1>}
-      { this.state.counter > 10 && this.state.counter < 15 && <h1>Last 10 seconds coming up</h1>}
+      { this.state.counter > 10 && this.state.counter < 15 && <h1>Last 100 seconds coming up</h1>}
         {this.state.showCounter &&
           this.state.counter > 0 && <h1>{this.state.counter}</h1>}
         {this.state.showCounter &&
