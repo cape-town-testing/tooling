@@ -7,7 +7,7 @@ class App extends Component {
   state = {
     color: "green",
     showCounter: false,
-    counter: 10
+    counter: 100
   };
 
   componentDidMount() {
